@@ -15,12 +15,24 @@
     border-radius: 40px;
     border: 0;
 
+    font-family: $font;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #292929;
+
+
 
     &::placeholder {
       font-family: $font;
       font-weight: 400;
       font-size: 14px;
       color: #7E7E83;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
     }
   }
 
@@ -33,12 +45,23 @@
     border-radius: 16px;
     border: 0;
 
+    font-family: $font;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #292929;
+
     &::placeholder {
       font-family: $font;
       font-weight: 400;
       font-size: 14px;
       line-height: 20px;
       color: #7E7E83;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
     }
   }
 

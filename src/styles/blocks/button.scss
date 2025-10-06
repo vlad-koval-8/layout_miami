@@ -11,5 +11,11 @@
   text-decoration: none;
   color: $color-secondary;
   border-radius: 40px;
+  border: none;
   display: block;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 1px 4px 16px 0px #E8E8F066;
+  }
 }

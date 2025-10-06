@@ -27,6 +27,8 @@
 
   &__paragraph {
     position: relative;
+    display: block;
+    margin-bottom: 50px;
     font-family: $font;
     font-weight: 600;
     font-size: 12px;
