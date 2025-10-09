@@ -2,28 +2,48 @@
 @use '../utils/mixins' as *;
 
 .main {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 20px;
-  padding: 60px 20px 0;
-  justify-content: center;
   background-color: $color-secondary;
+  padding: 60px 0 120px;
+
+  @media (min-width: 744px) {
+    padding: 120px 0 102px;
+  }
 
   &__description {
-    @include section-position;
+    @include phone-grid;
+    padding-bottom: 92px;
+
+    @media (min-width: 744px) {
+      @include tablet-grid;
+      padding-bottom: 132px;
+    }
   }
 
   &__bikes {
-    @include section-position;
-}
+    @include phone-grid;
+    padding-bottom: 92px;
+
+    @media (min-width: 744px) {
+      @include tablet-grid;
+      padding-bottom: 120px;
+    }
+  }
 
   &__details {
-    @include section-position;
+    @include phone-grid;
+    padding-bottom: 80px;
+
+    @media (min-width: 744px) {
+      @include tablet-grid;
+      padding-bottom: 120px;
+    }
   }
 
   &__contact {
-    grid-column: 1 / 3;
-    column-gap: 20px;
-    margin-bottom: 120px;
+    @include phone-grid;
+
+    @media (min-width: 744px) {
+      @include tablet-grid;
+    }
   }
 }

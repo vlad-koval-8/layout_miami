@@ -1,11 +1,15 @@
 @use '../utils/variables' as *;
 
 .contact {
-
   &__box {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    grid-column: 1 / -1;
+
+    @media (min-width: 744px) {
+      grid-column: 4 / 7;
+    }
   }
 
   &__item {
@@ -19,7 +23,7 @@
     font-family: $font;
     font-weight: 400;
     font-size: 14px;
-    color: $font-color
+    color: $font-color;
   }
 
   &__paragraph {

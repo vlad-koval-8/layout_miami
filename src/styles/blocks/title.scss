@@ -7,6 +7,12 @@
   letter-spacing: -1.5px;
   color: $font-color;
   text-align: center;
+  grid-column: 1 / -1;
+  align-self: end;
+
+  @media (min-width: 744px) {
+    font-size: 64px;
+  }
 
   &--secondary {
     font-weight: 500;
@@ -15,5 +21,10 @@
     letter-spacing: -1.5px;
     text-transform: capitalize;
     margin-bottom: 48px;
+
+    @media (min-width: 744px) {
+      font-size: 48px;
+      grid-column: 2 / span 4;
+    }
   }
 }

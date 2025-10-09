@@ -1,9 +1,13 @@
 .footer {
-  height: 200px;
-  width: 100%;
+  &__img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: right;
 
-  background-image: url(images/two-bikes.jpg);
-  background-size: cover;
-  background-position: right;
-  background-repeat: no-repeat;
+    @media (min-width: 744px) {
+      height: 480px;
+    }
+  }
 }

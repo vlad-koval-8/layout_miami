@@ -1,6 +1,7 @@
 @use '../utils/variables' as *;
 
 .button {
+  grid-column: 1 / -1;
   height: 56px;
   background-color: $button-color;
   font-family: $font;
@@ -15,7 +16,13 @@
   display: block;
   cursor: pointer;
 
+  &--link {
+    @media (min-width: 744px) {
+      grid-column: 2 / 6;
+    }
+  }
+
   &:hover {
-    box-shadow: 1px 4px 16px 0px #E8E8F066;
+    box-shadow: 1px 4px 16px #e8e8f066;
   }
 }
