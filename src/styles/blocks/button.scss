@@ -20,6 +20,10 @@
     @media (min-width: 744px) {
       grid-column: 2 / 6;
     }
+
+    @media (min-width: 1260px) {
+      grid-column: 5 / span 4;
+    }
   }
 
   &:hover {

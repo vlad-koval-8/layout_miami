@@ -1,6 +1,6 @@
 @use 'variables' as *;
 
-@mixin visually-hidden() {
+@mixin visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   height: 1px;
@@ -24,6 +24,14 @@
   column-gap: 24px;
   margin-left: 72px;
   margin-right: 72px;
+}
+
+@mixin desktop-grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(63px, 1fr));
+  column-gap: 24px;
+  margin-left: 120px;
+  margin-right: 120px;
 }
 
 @mixin small-title {

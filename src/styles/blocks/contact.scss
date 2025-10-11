@@ -10,6 +10,10 @@
     @media (min-width: 744px) {
       grid-column: 4 / 7;
     }
+
+    @media (min-width: 1260px) {
+      grid-column: 8 / 10;
+    }
   }
 
   &__item {

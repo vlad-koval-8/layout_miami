@@ -10,6 +10,10 @@
     grid-column: 2 / 6;
   }
 
+  @media (min-width: 1260px) {
+    grid-column: span 4;
+  }
+
   &:not(:last-child) {
     margin-bottom: 40px;
   }

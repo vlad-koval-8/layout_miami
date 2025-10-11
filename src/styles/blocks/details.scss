@@ -19,6 +19,12 @@
       margin: 0 0 16px;
     }
 
+    @media (min-width: 1260px) {
+      @include desktop-grid;
+
+      margin: 0 0 16px;
+    }
+
     &-photo {
       width: 100%;
       aspect-ratio: 1 / 1;
@@ -34,10 +40,18 @@
         aspect-ratio: 0;
       }
 
+      @media (min-width: 1260px) {
+        grid-column: span 4;
+      }
+
       &--bigger {
         @media (min-width: 744px) {
           grid-column: span 4;
           aspect-ratio: 0;
+        }
+
+        @media (min-width: 1260px) {
+          grid-column: span 8;
         }
       }
     }

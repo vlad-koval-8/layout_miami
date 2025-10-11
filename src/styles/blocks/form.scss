@@ -11,6 +11,10 @@
     grid-column: 1 / 4;
   }
 
+  @media (min-width: 1260px) {
+    grid-column: 1 / 6;
+  }
+
   &__input {
     width: 100%;
     height: 48px;
