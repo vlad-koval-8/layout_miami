@@ -15,7 +15,6 @@
   }
 
   &__link {
-    position: relative;
     font-family: $font;
     font-weight: 600;
     font-size: 22px;
@@ -24,13 +23,9 @@
     text-decoration: none;
     color: $color-secondary;
 
-    &:hover::after {
-      content: '';
-      position: absolute;
-      width: 136px;
-      border: 1px solid $color-secondary;
-      left: 0;
-      bottom: -8px;
+    &:hover {
+      text-decoration: underline;
+      text-underline-offset: 8px;
     }
   }
 }
